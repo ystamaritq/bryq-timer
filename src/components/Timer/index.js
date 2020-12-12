@@ -26,7 +26,7 @@ const Timer = ({ value = 0, onExpire }) => {
 				<div
 					className="timerIconTime"
 					style={{
-						backgroundImage: `conic-gradient(white 0% ${timerPercentage}%, ${backgroundColor} 0% 100%)`,
+						backgroundImage: `conic-gradient(${backgroundColor} 0% ${timerPercentage}%, white 0% 100%)`,
 					}}
 				></div>
 			</div>

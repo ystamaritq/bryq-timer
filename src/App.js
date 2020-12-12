@@ -7,7 +7,7 @@ const App = () => {
 	return (
 		<div className="App">
 			<Timer data-testid="timer-component"
-				value={60}
+				value={20}
 				onExpire={() => setShowMessage(true)}
 			/>
       {showMessage && <h3 style={{paddingLeft: 35}}>The timer has expired!</h3>}
