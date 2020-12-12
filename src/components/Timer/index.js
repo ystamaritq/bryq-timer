@@ -11,7 +11,6 @@ const Timer = ({ value = 0, onExpire }) => {
 		backgroundColor,
 	} = useTimer(value, onExpire);
 
-	// set 1 second interval to update remaining time and trigger property changes
 	useEffect(() => {
 		start();
 		return () => stop();
