@@ -35,7 +35,7 @@ export const useTimer = (
 	const [currentTime, setCurrentTime] = useState(initialValue);
 	const [backgroundColor, setBackgroundColor] = useState(defaultColor);
 	const [timerPercentage, setTimerPercentage] = useState(0);
-	const changeColorAtTime = changeColorAt / 4 + 1;
+	const changeColorAtTime = initialValue / changeColorAt + 1;
 	const intervalRef = useRef(null);
 
 	const stop = useCallback(() => {
