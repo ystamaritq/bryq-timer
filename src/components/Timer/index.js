@@ -19,7 +19,7 @@ const Timer = ({ value = 0, onExpire }) => {
 
 	return (
 		<div
-			className="timerContainer"
+			className="timerContainer" data-testid="timerContainer"
 			style={{ backgroundColor: backgroundColor }}
 		>
 			<div className="timerIcon">
